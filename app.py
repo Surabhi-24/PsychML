@@ -31,11 +31,14 @@ st.markdown("""
         text-align: center;
     }
     .remedy-box {
-        background-color: #f0f8ff;
+        background-color: #E8F2FF;
         padding: 15px;
-        border-radius: 8px;
-        border-left: 4px solid #1f77b4;
+        border-radius: 12px;
+        border-left: 5px solid #4A90E2;
         margin: 10px 0;
+        color: #222222;
+        font-size: 16px;
+    }
     }
     </style>
 """, unsafe_allow_html=True)
