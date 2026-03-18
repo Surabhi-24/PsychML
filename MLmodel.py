@@ -56,7 +56,20 @@ for name, mdl in models.items():
     print("Accuracy:", accuracy_score(y_test, y_pred))
     print(classification_report(y_test, y_pred))
 
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
 
+# y_test = actual labels
+# y_pred = predicted labels from your model
+
+cm = confusion_matrix(y_test, y_pred)
+
+# Display the confusion matrix
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot()
+
+plt.title("Confusion Matrix")
+plt.show()
 
 import pickle 
 import os
